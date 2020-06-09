@@ -5,4 +5,9 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.form {
+    background-color: rgb(161, 159, 159);
+    color: black;
+}
+
 

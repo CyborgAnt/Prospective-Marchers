@@ -3,21 +3,43 @@
 
 <head>
     <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <form>
-        <label for="fullname">Full Name</label><br>
-        <input type="text" id="fullname" name="fullname"><br>
-        <label for="emailaddress">Email Address</label><br>
-        <input type="email" id="emailaddress" name="emailaddress"><br>
-    
-        
-        
+    <div class="form">
+        <form name="Prospective Marchers" id="Prospective Marchers">
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" required="required" size=40px><br>
+            <label for="emailaddress">Email Address</label><br>
+            <input type="email" id="emailaddress" name="emailaddress" required="required"  size=40px><br>
+            <label for="address1">Address Line 1</label><br>
+            <input type="text" id="address1" name="address1"  size=40px><br>
+            <label for="address2">Address Line 2</label><br>
+            <input type="text" id="address1" name="address1"  size=40px><br>
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city"  size=40px><br>
+            <label for="state">State</label><br>
+            <input type="text" id="state" name="state"  size=40px><br>
+            <label for="section"><br>Select the sections you are interested in: <br>
+                <input type="checkbox" name="brass" id="brass" value="yes">Brass (Trumpets, Mellophones, Trombones, Baritones, Euphoniums, Tubas)<br>
+                <input type="checkbox" name="woodwinds" id="woodwinds" value="yes">Woodwinds (Piccolos, Flutes, Clarinets, Alto Saxophones, Tenor Saxophones, Baritone Saxophones)<br>
+                <input type="checkbox" name="hguard" id="hguard" value="yes">Honor Guard<br>
+                <input type="checkbox" name="guard" id="guard" value="yes">Color Guard (Flags, Rifles, Sabres, Field Props)<br>
+                <input type="checkbox" name="percussion" id="percussion" value="yes">Percussion (Snares, Tenors, Basses, Cymbals, Front Ensemble, Electronics)<br>
+                <input type="checkbox" name="drum_major" id="drum_major" value="yes">Drum Major/Field Conductor<br>
+                Experience: <br>
+                <textarea name="experience" id="experience" cols="60" rows="8">Please list your marching experience</textarea><br>
+                <input type="submit">
+                <input type="reset">
+            </label>
+            
 
 
 
-    </form>
+        </form>
+</div>
+
 
 
 
