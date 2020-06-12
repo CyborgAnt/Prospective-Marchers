@@ -1,7 +1,8 @@
 /* trying different color and font combinations */
 body{
     background-color: aqua;
-    color: black;
+    color: whitesmoke;
+    font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,4 +11,19 @@ body{
     color: black;
 }
 
+/* Main Style Changes */
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
 
+#main_column{
+    width: 75%;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+#left {
+    width: 20%;
+
+}
