@@ -1,13 +1,104 @@
-/* trying different color and font combinations */
-body{
-    background-color: aqua;
+/* ******************************
+    Layout Styles - Full Site
+********************************* */
+
+* {
+    /* below forces padding & border into width and height of the element */
+    box-sizing: border-box; 
+}
+
+.main-header, footer {
+    text-align: center;
+    background-color: lightgrey;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px black solid;
+    margin: 5px;
+}
+
+/* .main-header {
+    background-image: url(Images/bass-clef2.png) right no-repeat, url(Images/treble2.png) left;
+} */
+
+/* Link Color Changes */
+a:link {
+    color: lightgray;
+}
+a:visited {
+    color: yellowgreen;
+}
+
+
+/* ------------------------------
+    Styles - Index Page
+--------------------------------- */
+
+.nav-column, .main-column {
+    background-image: linear-gradient(to bottom right, blue, grey);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 5px black solid;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 1em;
+}
+
+/* --------------------------------
+    Styles - Circuits Page 
+----------------------------------- */
+
+#DCI, #DCA, #SDCA, #WGI {
+    
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* -------------------------------
+    Styles - Form Page
+---------------------------------- */
+
+.fill {
+    background-color: grey;
+    color: black;
 }
 
 .form {
-    background-color: rgb(161, 159, 159);
+    background-color: rgba(0, 26, 255, 0.644);
     color: black;
 }
 
+/* ********************************
+    Flexbox Layout
+*********************************** */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0.75em;
+}
+
+
+/* ********************************
+    Media Queries
+*********************************** */
+
+@media (min-width: 769px) {
+    .container {
+        width: 70%;
+        max-width: 999px;
+        text-align: center;
+
+    }
+}
+
+@media ((min-width: 320px) && (max-width: 768px)) {
+    .nav-column {
+        
+    }
+}
 
