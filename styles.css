@@ -32,7 +32,7 @@ a:visited {
     Styles - Index Page
 --------------------------------- */
 
-.nav-column, .main-column {
+.column {
     background-image: linear-gradient(to bottom right, blue, grey);
     color: white;
     margin: 5px;
@@ -90,19 +90,62 @@ ul {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0.75em;
-}
+} 
 
 
 /* ********************************
     Media Queries
 *********************************** */
 
-@media (min-width: 769px) {
+@media (min-width: 320px) and (max-width: 763px) {
     .container {
-        width: 70%;
-        max-width: 999px;
+        width: 90%;
         text-align: center;
-
+        padding: 5px;
+        margin: 5px;
+    }
+    ul {
+        font-size: 1.5em;
+        text-align: center;
+        list-style: none;
     }
 }
 
+@media (max-width: 1023px) and (min-width: 764px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    ul {
+        font-size: 1.5em;
+        text-align: left;
+        list-style: circle;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+}
