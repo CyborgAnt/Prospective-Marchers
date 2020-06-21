@@ -67,9 +67,26 @@ ul {
 }
 
 .form {
-    
     color: black;
 }
+
+/* Attribute Selectors below */
+
+input[type="text"] {
+    background: lightgray;
+}
+
+input[type="email"] {
+    background: beige;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
 
 /* --------------------------------
     Styles - Contacts Page
