@@ -1,6 +1,6 @@
-/* ******************************
+/* ***************************************************
     Layout Styles - Full Site
-********************************* */
+*************************************************** */
 
 .main-header, footer {
     text-align: center;
@@ -26,13 +26,41 @@
     padding: 5px;
 }
 
-/* ********************************
+/* for the Form Page */
+label {
+    display: block;
+    overflow-wrap: break-word;
+}
+textarea {
+    resize: both;
+    margin-bottom: 10px;
+}
+input[type=text], input[type=email] {
+    border: 1px solid blue;
+    width: 90%;
+}
+#contacts, #about-us {
+    border: 2px dashed violet;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* ********************************************************
     Media Queries
-*********************************** */
+********************************************************* */
 
 @media (max-width: 575px) {
     .col-3 {
         border: 5px solid green;
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        justify-content: center;
+        background-color: lightgray;
+        padding-left: 10px;
     }
 }
 
@@ -50,7 +78,6 @@
         border: 5px solid black;
         width: 50%;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -71,7 +98,11 @@
     .col-3 {
         border: 5px solid aqua;
     }
-
+    .form {
+        justify-content: left;
+        background-color: lightgray;
+        padding-left: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -91,6 +122,11 @@
     .col-3 {
         border: 5px solid green;
         width: 50%;
+    }
+    .form {
+        justify-content: left;
+        background-color: lightgray;
+        padding-left: 20px;
     }
 
 }
