@@ -2,11 +2,6 @@
     Layout Styles - Full Site
 ********************************* */
 
-* {
-    /* below forces padding & border into width and height of the element */
-    box-sizing: border-box; 
-}
-
 .main-header, footer {
     text-align: center;
     background-color: lightgrey;
@@ -15,90 +10,87 @@
     margin: 5px;
 }
 
-/* .main-header {
-    background-image: url(Images/bass-clef2.png) right no-repeat, url(Images/treble2.png) left;
-} */
-
-/* Link Color Changes */
-a:link {
-    color: lightgray;
-}
-a:visited {
-    color: yellowgreen;
-}
-
-
-/* ------------------------------
-    Styles - Index Page
---------------------------------- */
-
-.nav-column, .main-column {
-    background-image: linear-gradient(to bottom right, blue, grey);
-    color: white;
-    margin: 5px;
-    padding: 5px;
-    border: 5px black solid;
-}
-
-ul {
-    list-style: none;
-    text-align: left;
-    padding: 1em;
-}
-
-/* --------------------------------
-    Styles - Circuits Page 
------------------------------------ */
-
-#DCI, #DCA, #SDCA, #WGI {
-    
-    border: 5px solid black;
-    padding: 10px;
-    margin: 10px;
-}
-
-/* -------------------------------
-    Styles - Form Page
----------------------------------- */
-
-.fill {
-    background-color: grey;
-    color: black;
-}
-
-.form {
-    background-color: rgba(0, 26, 255, 0.644);
-    color: black;
-}
-
-/* ********************************
-    Flexbox Layout
-*********************************** */
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
+.row {
     flex-direction: column;
-    padding: 0.75em;
+    justify-content: center;
+    word-wrap: normal;
+    display: flex;
+    padding: 5px;
 }
-
+.col-4 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.col {
+    border: 5px solid orange;
+    padding: 5px;
+}
 
 /* ********************************
     Media Queries
 *********************************** */
 
-@media (min-width: 769px) {
-    .container {
-        width: 70%;
-        max-width: 999px;
-        text-align: center;
-
+@media (max-width: 575px) {
+    .col-3 {
+        border: 5px solid green;
     }
 }
 
-@media ((min-width: 320px) && (max-width: 768px)) {
-    .nav-column {
-        
+@media (min-width: 576px) and (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
     }
+    /* ADD STATIC IMAGE HERE, LEFT COLUMN */
+    .col {
+        border: 5px solid red;
+    }
+    .col-3 {
+        border: 5px solid black;
+        width: 50%;
+    }
+
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .row, .row-header {
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    }
+    .page {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+    /* ADD CAROUSEL HERE */
+    .col {
+        border: 5px solid navy;
+    }
+    .col-3 {
+        border: 5px solid aqua;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .row {
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    }
+    .page {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+    .col {
+        border: 5px solid red;
+    }
+    .col-3 {
+        border: 5px solid green;
+        width: 50%;
+    }
+
+}

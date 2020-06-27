@@ -1,32 +1,52 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-    <title>Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <head>
+        <title>Prospective Marchers</title>
+        <link rel="stylesheet" href="normalize.css">
+        <!-- Adding Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="utf-8">    
+    </head>
 
 <body>
+    <header class="main-header">
+        <h1>Prospective Marchers</h1>
+        <div class="container">
+            <div class="page">
+                <a href="index.html">Home</a>
+            </div> 
+            <div class="page">
+                <a href="Form.html">Membership Form</a>
+            </div>
+            <div class="page">
+                <a href="Circuits.html">Circuits</a>
+            </div>
+            <div class="page">
+                <a href="About.html">About Me and Contacts</a>
+            </div>  
+        </div>    
+    </header>
+    
     <div class="form">
-        <header>
-            <h2>Prospective Form</h2>
-        </header>
-        
+
         <p><b>Please fill out the following form:</b></p>
         
         <div class="fill">
             <form name="Prospective Marchers" id="Prospective Marchers">
-                <label for="fullname">Full Name</label><br>
+                <label for="fullname">Full Name:</label><br>
                 <input type="text" id="fullname" name="fullname" required="required" size=40px><br>
-                <label for="emailaddress">Email Address</label><br>
+                <label for="emailaddress">Email Address:</label><br>
                 <input type="email" id="emailaddress" name="emailaddress" required="required"  size=40px><br>
-                <label for="address1">Address Line 1</label><br>
+                <label for="address1">Address Line 1:</label><br>
                 <input type="text" id="address1" name="address1"  size=40px><br>
-                <label for="address2">Address Line 2</label><br>
+                <label for="address2">Address Line 2:</label><br>
                 <input type="text" id="address1" name="address1"  size=40px><br>
-                <label for="city">City</label><br>
+                <label for="city">City:</label><br>
                 <input type="text" id="city" name="city"  size=40px><br>
-                <label for="state">State</label><br>
+                <label for="state">State:</label><br>
                 <input type="text" id="state" name="state"  size=40px><br>
                 <label for="section"><br>Select the sections you are interested in: <br>
                     <input type="checkbox" name="brass" id="brass" value="yes">Brass (Trumpets, Mellophones, Trombones, Baritones, Euphoniums, Tubas)<br>
@@ -44,7 +64,11 @@
         </div>
     </div>
 
+<a href="Index.html">Back to Home</a>
 
+<footer>
+    &copy;2020 Cyborg Studios.
+</footer>
 
 </body>
 
