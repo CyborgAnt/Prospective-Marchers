@@ -13,6 +13,7 @@
 .row {
     flex-direction: column;
     justify-content: center;
+    word-wrap: normal;
     display: flex;
     padding: 5px;
 }
@@ -30,7 +31,7 @@
 *********************************** */
 
 @media (max-width: 575px) {
-    .col-4 {
+    .col-3 {
         border: 5px solid green;
     }
 }
@@ -41,10 +42,11 @@
         justify-content: center;
         display: flex;
     }
+    /* ADD STATIC IMAGE HERE, LEFT COLUMN */
     .col {
         border: 5px solid red;
     }
-    .col-4 {
+    .col-3 {
         border: 5px solid black;
         width: 50%;
     }
@@ -52,15 +54,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .row {
+    .row, .row-header {
         flex-direction: row;
         justify-content: center;
         display: flex;
     }
+    .page {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+    /* ADD CAROUSEL HERE */
     .col {
         border: 5px solid navy;
     }
-    .col-4 {
+    .col-3 {
         border: 5px solid aqua;
     }
 
@@ -72,10 +80,15 @@
         justify-content: center;
         display: flex;
     }
+    .page {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
     .col {
         border: 5px solid red;
     }
-    .col-4 {
+    .col-3 {
         border: 5px solid green;
         width: 50%;
     }
