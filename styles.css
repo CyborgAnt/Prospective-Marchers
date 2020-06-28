@@ -25,8 +25,15 @@
     border: 5px solid orange;
     padding: 5px;
 }
+.col-5, .col-7 {
+    border: 2px dashed violet;
+    margin: 10px;
+    padding: 10px;
+}
 
-/* for the Form Page */
+/* ------------------------
+    Form Page 
+------------------------ */
 label {
     display: block;
     overflow-wrap: break-word;
@@ -39,19 +46,26 @@ input[type=text], input[type=email] {
     border: 1px solid blue;
     width: 90%;
 }
-#contacts, #about-us {
-    border: 2px dashed violet;
-    margin: 10px;
-    padding: 10px;
+
+/* ------------------------
+    Circuits Page
+------------------------ */
+
+.col-a, .col-b {
+    border: 5px solid blue;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
+
 
 
 /* ********************************************************
     Media Queries
 ********************************************************* */
 
+/* Small Screens */
 @media (max-width: 575px) {
-    .col-3 {
+    .col-4 {
         border: 5px solid green;
     }
 }
@@ -64,6 +78,7 @@ input[type=text], input[type=email] {
     }
 }
 
+/* Medium Screens and Tablets */
 @media (min-width: 576px) and (max-width: 767px) {
     .row {
         flex-direction: column;
@@ -74,14 +89,15 @@ input[type=text], input[type=email] {
     .col {
         border: 5px solid red;
     }
-    .col-3 {
+    .col-4 {
         border: 5px solid black;
         width: 50%;
     }
 }
 
+/* Large Screens */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .row, .row-header {
+    .row, .row-header, .row-2, .row-3 {
         flex-direction: row;
         justify-content: center;
         display: flex;
@@ -91,11 +107,15 @@ input[type=text], input[type=email] {
         margin-right: 10px;
         text-decoration: underline;
     }
+    #contacts {
+        flex-basis: 50%;
+    }
+
     /* ADD CAROUSEL HERE */
     .col {
         border: 5px solid navy;
     }
-    .col-3 {
+    .col-4 {
         border: 5px solid aqua;
     }
     .form {
@@ -103,10 +123,16 @@ input[type=text], input[type=email] {
         background-color: lightgray;
         padding-left: 20px;
     }
+    .row-a, .row-b {
+        flex-direction: row;
+        justify-content: left;
+        display: flex;
+    }
 }
 
+/* Large Widescreens */
 @media (min-width: 1024px) {
-    .row {
+    .row, .row-header, .row-2, .row-3 {
         flex-direction: row;
         justify-content: center;
         display: flex;
@@ -119,7 +145,7 @@ input[type=text], input[type=email] {
     .col {
         border: 5px solid red;
     }
-    .col-3 {
+    .col-4 {
         border: 5px solid green;
         width: 50%;
     }
@@ -127,6 +153,11 @@ input[type=text], input[type=email] {
         justify-content: left;
         background-color: lightgray;
         padding-left: 20px;
+    }
+    .row-a, .row-b {
+        flex-direction: row;
+        justify-content: left;
+        display: flex;
     }
 
 }
