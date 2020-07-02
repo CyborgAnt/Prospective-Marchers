@@ -50,6 +50,7 @@ label {
 textarea {
     resize: both;
     margin-bottom: 2em;
+    width: 90%;
 }
 input[type=text], input[type=email] {
     border: 1px solid blue;
