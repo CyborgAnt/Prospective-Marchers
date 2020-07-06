@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, black, blue, lightgrey);
+    background-image: linear-gradient(to top right, black, blue, purple);
     color: white;
 }
 
@@ -42,6 +42,7 @@ body {
 /* ------------------------
     Form Page 
 ------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro); /* Sans Pro font */
 label {
     display: block;
     overflow-wrap: break-word;
@@ -61,7 +62,7 @@ input[type=text], input[type=email] {
     Circuits Page
 ------------------------ */
 
-.col-a, .col-b {
+.col-a, .col-b{
     border: 5px solid black;
     margin: 0 10px 10px 10px;
 }
@@ -93,7 +94,7 @@ input[type=text], input[type=email] {
         justify-content: center;
         display: flex;
     }
-    /* ADD STATIC IMAGE HERE, LEFT COLUMN */
+
     .col {
         border: 5px solid red;
     }
@@ -110,11 +111,11 @@ input[type=text], input[type=email] {
         justify-content: center;
         display: flex;
     }
-    .page {
+    /* .page {
         margin-left: 10px;
         margin-right: 10px;
         text-decoration: underline;
-    }
+    } */
     #contacts {
         flex-basis: 50%;
     }
@@ -136,7 +137,7 @@ input[type=text], input[type=email] {
         justify-content: left;
         display: flex;
     }
-    .page {
+    .page, .col-link {
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -171,7 +172,7 @@ input[type=text], input[type=email] {
         justify-content: left;
         display: flex;
     }
-    .page {
+    .page, .col-link {
         margin-left: 25px;
         margin-right: 25px;
     }
