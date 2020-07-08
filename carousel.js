@@ -1,21 +1,21 @@
-!(function(d) {
+!(function(document) {
     var itemClassName = "carousel_photo";
-        items = d.getElementsByClassName(itemClassName),
+        items = document.getElementsByClassName(itemClassName),
         totalItems = items.length,
         slide = 0,
         moving = true;
 
     // set classes
     function setInitialClasses() {
-        items[totalItems - 1].classList.add("prew");
+        items[totalItems - 1].classList.add("prev");
         items[0].classList.add("active");
         items[1].classList.add("next");    
     }
 
     // Event Listeners
     function setEventListeners() {
-        var next = d.getElementsByClassName('carousel_button--next')[0],
-            prev = d.getElementsByClassName('carousel_button--prev');
+        var next = document.getElementsByClassName('carousel_button--next')[0],
+            prev = document.getElementsByClassName('carousel_button--prev');
 
         next.addEventListener('click', moveNext);
         prev.addEventListener('click', movePrev);    
@@ -36,8 +36,8 @@
     // 'Prev' Navigation Handler
     function movePrev() {
         if (!moving) {
-            if (slide === (totalItems - 1)) {
-                slide = 0;
+            if (slide === 0) {
+                slide = (totalItems - 1);
             } else {
                 slide--;
             }
@@ -70,8 +70,20 @@
                 if (newPrevious <= 0) {
                     oldPrevious = (totalItems - 1);
                 }   else if (newNext >= (totalItems - 1)) {
-                    oldNext =0;
+                    oldNext = 0;
                 }
+
+                if (slide === 0) {
+                    newPrevious = (totalItems - 1);
+                    oldPrevious = (totalItems - 2);
+                    oldNext = (slide + 1);
+                } else if (slide === (totalItems - 1)) {
+                    newPrevious = (slide - 1);
+                    newNext = 0;
+                    oldNext = 1;
+                }
+
+            }
                 
             // Reset old Next/Prev elements to default classes
             items[oldPrevious].className = itemClassName;

@@ -15,6 +15,12 @@ body {
     color: white;
 }
 
+p, li {
+    text-align: left;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
 .row {
     flex-direction: column;
     justify-content: center;
@@ -30,13 +36,18 @@ body {
     border: 5px solid orange;
     padding: 5px;
 }
-.col-5, .col-7 {
+.col-5, .col-7, .col-6 {
     border: 2px dashed violet;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    word-wrap: break-word;
 }
 #bottom-link {
     margin: 20px;
+}
+
+#about {
+    padding: 1em;
 }
 
 /* *****************************
@@ -150,13 +161,21 @@ input[type=text], input[type=email] {
     width: 90%;
 }
 
+input:nth-of-type(even) {
+    background-color:  blue;
+    color: white;
+}
+input:nth-of-type(odd) {
+    background-color: rgb(173, 74, 173);
+    color: white;
+}
+
 /* ------------------------
     Circuits Page
 ------------------------ */
 
-.col-a, .col-b{
-    border: 5px solid black;
-    margin: 0 10px 10px 10px;
+.flex-container2 {
+    display: grid;
 }
 
 
@@ -219,6 +238,7 @@ input[type=text], input[type=email] {
     .col-4 {
         border: 5px solid aqua;
     }
+
     .form {
         justify-content: left;
         background-color: lightgray;
