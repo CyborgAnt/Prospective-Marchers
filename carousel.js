@@ -69,7 +69,7 @@
                 // Checks and updates if the new slides are out of bounds
                 if (newPrevious <= 0) {
                     oldPrevious = (totalItems - 1);
-                }   else if (newNext >= (totalItems - 1)) {
+                }  else if (newNext >= (totalItems - 1)) {
                     oldNext = 0;
                 }
 
@@ -82,8 +82,6 @@
                     newNext = 0;
                     oldNext = 1;
                 }
-
-            }
                 
             // Reset old Next/Prev elements to default classes
             items[oldPrevious].className = itemClassName;
