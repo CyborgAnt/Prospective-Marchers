@@ -22,6 +22,15 @@ p {
     padding: 10px;
 }
 
+.row {
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: normal;
+    display: flex;
+    padding: 5px;
+}
+
+
 /* Commented Out - Mass Edits 
 .main-header, footer {
     text-align: center;
@@ -31,14 +40,13 @@ p {
     margin: 5px;
 }
 
-.row {
-    flex-direction: column;
-    justify-content: center;
-    word-wrap: normal;
-    display: flex;
-    padding: 5px;
+.col-5, .col-7, .col-6 {
+    border: 2px dashed violet;
+    margin: 10px;
+    padding: 15px;
+    word-wrap: break-word;
 }
-.col-4 {
+/* .col-4 {
     padding: 5px;
     margin-bottom: 5px;
 }
@@ -46,12 +54,7 @@ p {
     border: 5px solid orange;
     padding: 5px;
 }
-.col-5, .col-7, .col-6 {
-    border: 2px dashed violet;
-    margin: 10px;
-    padding: 15px;
-    word-wrap: break-word;
-}
+
 #bottom-link {
     margin: 20px;
 }
@@ -63,7 +66,8 @@ p {
 
 /* ********************************************
     Carousel Stylings
-******************************************** */
+******************************************** */ */
+
 
 * {
     box-sizing: border-box;
@@ -78,7 +82,7 @@ p {
 
 .mySlides {
     display: none;
-}
+} 
 
 /* Next and Previous buttons */
 .prev, .next {
@@ -133,7 +137,7 @@ p {
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: inline-block;
     transition: background-color 0.6s ease;
 }
@@ -193,7 +197,7 @@ input:nth-of-type(even) {
     color: white;
 }
 input:nth-of-type(odd) {
-    background-color: rgb(173, 74, 173);
+    background-color: rgb(14, 128, 167);
     color: white;
 }
 
@@ -203,7 +207,7 @@ input:nth-of-type(odd) {
 
 .flex-container2 {
     display: grid;
-}
+} */
 
 
 /* ********************************************************
