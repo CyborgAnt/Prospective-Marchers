@@ -1,0 +1,5 @@
+/* Attribute Selectors CSS */
+
+input[type="text"] {
+    background: greenyellow;
+}
