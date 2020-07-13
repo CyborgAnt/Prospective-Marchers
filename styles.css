@@ -3,10 +3,28 @@
 *************************************************** */
 
 body {
-    background-image: linear-gradient(to top right, rgb(14, 128, 167), black);
+    background-image: linear-gradient(to bottom left, rgb(36, 197, 157), rgb(21, 41, 155));
     color: white;
     font-family: Verdana, sans-serif;
     margin: 0;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+/* link colors */
+a:link {
+    color: rgb(151, 163, 128);
+}
+a:visited {
+    color: yellow
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: orange;
 }
 
 p {
@@ -23,9 +41,9 @@ img {
     height: 200px;
 }
 
-img {
-    width: 250px;
-    height: 200px;
+#Anthony {
+    width: 400px;
+    height: 500px;
 }
 
 .row {
@@ -34,6 +52,14 @@ img {
     word-wrap: normal;
     display: flex;
     padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    border: 5px black solid;
+    margin: 5px;
 }
 
 
@@ -228,7 +254,7 @@ input:nth-of-type(odd) {
         justify-content: center;
         display: flex;
     }
-    img {
+    /img {
         border: 5px solid black;
         margin: 10px;
         padding: 10px;
