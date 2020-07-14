@@ -102,7 +102,7 @@
 *************************************************** */
 
 body {
-    background-image: linear-gradient(to bottom left, rgb(36, 197, 157), rgb(21, 41, 155));
+    background-image: linear-gradient(to bottom left, rgb(36, 197, 157), rgb(8, 18, 160));
     color: white;
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -162,38 +162,6 @@ footer {
 }
 
 
-/* Commented Out - Mass Edits 
-.main-header, footer {
-    text-align: center;
-    background-color: lightgrey;
-    color: black;
-    border: 5px black solid;
-    margin: 5px;
-}
-
-.col-5, .col-7, .col-6 {
-    border: 2px dashed violet;
-    margin: 10px;
-    padding: 15px;
-    word-wrap: break-word;
-}
-/* .col-4 {
-    padding: 5px;
-    margin-bottom: 5px;
-}
-.col {
-    border: 5px solid orange;
-    padding: 5px;
-}
-
-#bottom-link {
-    margin: 20px;
-}
-
-#about {
-    padding: 1em;
-}
-*/
 
 
 /* ------------------------
@@ -271,7 +239,7 @@ input:nth-of-type(odd) {
 
 /* Large Screens */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .row, .row-header, .row-2, .row-3{
+    .row {
         flex-direction: row;
         justify-content: center;
         display: flex;
@@ -300,7 +268,7 @@ input:nth-of-type(odd) {
     }
 
     .form {
-        justify-content: left;
+        justify-content: center;
         background-color: lightgray;
         padding-left: 20px;
     }
