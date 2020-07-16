@@ -13,7 +13,7 @@
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
@@ -141,8 +141,8 @@ img {
 }
 
 #Anthony {
-    width: 400px;
-    height: 500px;
+    width: 320px;
+    height: 400px;
 }
 
 .row {
@@ -254,6 +254,7 @@ input:nth-of-type(odd) {
         margin-right: 10px;
         text-decoration: underline;
     } */
+   
     #contacts {
         flex-basis: 50%;
     }
@@ -292,6 +293,11 @@ input:nth-of-type(odd) {
         justify-content: center;
         display: flex;
     }
+
+    #carousel {
+        border: 2px solid greenyellow;
+    }
+
     .col-6 {
         border: 2px solid greenyellow;
     }
