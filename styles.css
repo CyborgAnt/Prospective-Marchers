@@ -129,13 +129,13 @@ a:active {
 p {
     text-align: left;
     word-wrap: break-word;
-    padding: 5px;
+    padding: 10px;
 }
 
 img {
     border: 2px solid black;
     margin: 5px;
-    padding: 10px;
+    padding: 5px;
     width: 250px;
     height: 200px;
 }
@@ -200,7 +200,6 @@ input:nth-of-type(odd) {
     display: grid;
 }
 
-
 /* ********************************************************
     Media Queries
 ********************************************************* */
@@ -259,7 +258,6 @@ input:nth-of-type(odd) {
         flex-basis: 50%;
     }
 
-    /* ADD CAROUSEL HERE */
     .col {
         border: 5px solid navy;
     }
@@ -281,6 +279,10 @@ input:nth-of-type(odd) {
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    .col-6 {
+        border: 2px solid greenyellow;
+    }
 }
 
 /* Large Widescreens */
@@ -290,6 +292,10 @@ input:nth-of-type(odd) {
         justify-content: center;
         display: flex;
     }
+    .col-6 {
+        border: 2px solid greenyellow;
+    }
+
     .page {
         margin-left: 10px;
         margin-right: 10px;
