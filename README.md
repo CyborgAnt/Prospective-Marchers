@@ -2,6 +2,7 @@
 "Prospective Marchers" is where people who want to march or perform on one of the Spring and Summer performance circuits can enter their information into a database. Group Directors can then retrieve this info and contact the prospective marcher about upcoming tryouts, camps, etc.
 
 There are 4 main sections:
+
 a)Main Page - a header with a Hamburger menu, site info, and 'sponsors' (these are not actual page sponsors)
 b) Membership Form Page - an HTML form with 'nth-child' CSS styling and a form 'Reset' button
 c) Circuits Page - info on the major marching circuits in the United States
