@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="newStyles.css">
         <script src="carousel.js"></script>
+        <script src="form.js"></script>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -59,7 +60,7 @@
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required="required" size=40px>
                 <label for="emailaddress">Email Address:</label>
-                <input type="email" id="emailaddress" name="emailaddress" required="required"  size=40px>
+                <input type="email" id="emailaddress" name="emailaddress" required="required" onblur="validateEmail(this);" size=40px>
                 <label for="address1">Address Line 1:</label>
                 <input type="text" id="address1" name="address1"  size=40px>
                 <label for="address2">Address Line 2:</label>
