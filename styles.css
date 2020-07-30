@@ -86,9 +86,9 @@ img {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 4.5s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 4.5s;
+  animation-duration: 1.5s;
 }
 
 
@@ -170,7 +170,7 @@ footer {
 
 
 /* ------------------------
-    Form Page 
+         Form Page 
 ------------------------ */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro); /* Sans Pro font */
 label {
@@ -197,16 +197,16 @@ input:nth-of-type(odd) {
     color: white;
 }
 
-/* ------------------------
-    Circuits Page
------------------------- */
+/* -----------------------------
+        Circuits Page
+----------------------------- */
 
 .flex-container2 {
     display: grid;
 }
 
 /* ********************************************************
-    Media Queries
+                    Media Queries
 ********************************************************* */
 
 /* Small Screens */
